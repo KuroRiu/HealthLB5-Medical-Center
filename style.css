@@ -1,0 +1,343 @@
+:root {
+    --color-primary: rgb(234, 244, 251);
+    --color-accent: rgb(41, 128, 185);
+    --color-bg: rgb(245, 249, 252);
+    --color-text: rgb(26, 26, 26);
+
+    --spacing-small: 0.5rem;
+    --spacing-medium: 1rem;
+    --spacing-large: 2rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* BODY */
+body {
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.6;
+    color: var(--color-text);
+
+    background: linear-gradient(rgba(234, 244, 251, 0.5), rgba(0, 120, 200, 0.5)),
+                url("backgrnd.jpg") no-repeat center/cover fixed;
+}
+
+/* TYPOGRAPHY */
+h1 {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    margin-bottom: var(--spacing-medium);
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-small);
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-small);
+}
+
+p {
+    margin-bottom: var(--spacing-medium);
+}
+
+/* GLASS */
+.glass {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    padding: var(--spacing-medium);
+    margin: var(--spacing-medium);
+}
+
+/* HEADER */
+header {
+    text-align: center;
+}
+
+/* NAV */
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-medium);
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-text);
+    padding: var(--spacing-small);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: var(--color-accent);
+    color: white;
+}
+
+/* MAIN */
+main {
+    display: flex;
+    gap: var(--spacing-large);
+    max-width: 1200px;
+    margin: auto;
+}
+
+main > section {
+    flex: 1;
+}
+
+aside {
+    max-width: 250px;
+}
+
+/* TWO COLUMNS */
+.two-columns {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-medium);
+}
+
+/* IMAGES */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: var(--spacing-medium);
+}
+
+th, td {
+    border: 1px solid var(--color-accent);
+    padding: var(--spacing-small);
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background: #e6f2fa;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: var(--spacing-small);
+}
+
+/* GALLERY */
+
+.gallery-title {
+    text-align: center;
+    margin-bottom: var(--spacing-medium);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-medium);
+    grid-auto-flow: dense;
+}
+
+.card {
+    background: white;
+    padding: var(--spacing-medium);
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    object-fit: cover;
+
+    animation: bounceIn 0.6s both;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* stagger */
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.3s; }
+.card:nth-child(4) { animation-delay: 0.4s; }
+.card:nth-child(5) { animation-delay: 0.5s; }
+.card:nth-child(6) { animation-delay: 0.6s; }
+.card:nth-child(7) { animation-delay: 0.7s; }
+.card:nth-child(8) { animation-delay: 0.8s; }
+.card:nth-child(9) { animation-delay: 0.9s; }
+.card:nth-child(10) { animation-delay: 1s; }
+.card:nth-child(11) { animation-delay: 1.1s; }
+.card:nth-child(12) { animation-delay: 1.2s; }
+
+.card:nth-child(1),
+.card:nth-child(2) {
+    grid-column: span 2;
+}
+
+/* ANIMATION */
+@keyframes bounceIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* EXPLORE SECTION */
+
+.explore-container {
+    display: flex;
+    gap: var(--spacing-large);
+    align-items: flex-start;
+}
+
+.explore-images {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-medium);
+    flex: 1;
+}
+
+.explore-images img {
+    width: 350px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nav-button {
+    position: sticky;
+    top: 100px;
+
+    height: fit-content;
+    padding: var(--spacing-small) var(--spacing-medium);
+    border: none;
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: inherit;
+}
+
+.nav-button:hover {
+    background: var(--color-accent);
+    color: white;
+}
+
+.deletebtn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: crimson;
+}
+
+/* VUE NEWS SECTION */
+
+.news-section {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-large);
+    margin-top: var(--spacing-large);
+}
+
+.news-grid .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    min-height: 420px;
+
+    transition: transform 0.3s;
+}
+
+.news-grid .card:hover {
+    transform: translateY(-5px);
+}
+
+.news-grid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.news-grid h3 {
+    margin-top: var(--spacing-medium);
+    color: var(--color-accent);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-medium);
+
+    margin-top: var(--spacing-large);
+}
+
+.page-info {
+    font-weight: bold;
+}
+
+.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+/* MEDIA */
+/* 576px */
+@media (min-width: 576px) {
+    nav ul {
+        gap: var(--spacing-large);
+    }
+}
+
+/* 768px */
+@media (min-width: 768px) {
+
+    .two-columns {
+        flex-direction: row;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .explore-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .nav-button {
+        align-self: center;
+    }
+}
+
+/* 1024px */
+@media (min-width: 1024px) {
+
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

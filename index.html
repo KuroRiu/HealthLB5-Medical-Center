@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthLB1 Medical Center</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script type="module" src="app.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<script src="script.js"></script>
+<script type="module" src="app.js"></script>
+<body>
+
+<header class="glass">
+    <h1>HealthLB3 Medical Center</h1>
+
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="#about" aria-current="page">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#doctors">Doctors</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#explore">Explore</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <!-- SECTION 1 -->
+    <section id="about" class="glass">
+        <h2>About Our Center</h2>
+
+        <p><strong>HealthLB1</strong> is a modern medical center that provides high-quality healthcare services. Our mission is to ensure patient comfort and professional treatment.</p>
+
+        <p>We combine <em>advanced technologies</em> with experienced specialists to deliver the best results for our patients.</p>
+
+        <figure>
+            <img src="cabinet.jpg" alt="Modern medical clinic interior" title="Medical Center">
+            <figcaption>Our modern medical facility</figcaption>
+        </figure>
+    </section>
+
+    <!-- SECTION 2 -->
+    <section id="services" class="glass two-columns">
+        <div>
+            <h2>Our Services</h2>
+
+            <h3>Main Directions</h3>
+
+            <p>We offer a wide range of medical services including diagnostics, therapy, and preventive care.</p>
+
+            <p>Our team focuses on <strong>patient safety</strong> and <em>individual approach</em>.</p>
+            
+            <dl>
+                <dt>Therapy</dt>
+                <dd>General health diagnostics and treatment</dd>
+
+                <dt>Cardiology</dt>
+                <dd>Heart and vascular system care</dd>
+
+                <dt>Diagnostics</dt>
+                <dd>Modern equipment for accurate analysis</dd>
+            </dl>
+        </div>
+
+        <div>
+            <img src="doctor.jpg" alt="Doctor consulting a patient" title="Medical Service">
+        </div>
+    </section>
+
+    <!-- SECTION 3 -->
+    <section id="doctors" class="glass">
+        <h2>Doctors, Specialization and Rooms</h2>
+        <table>
+            <caption>List of Doctors, Specializations and Rooms</caption>
+
+            <thead>
+                <tr>
+                    <th scope="col">Doctor</th>
+                    <th scope="col">Specialization</th>
+                    <th scope="col">Room</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th scope="row">Dr. Smith</th>
+                    <td>Therapist</td>
+                    <td>101</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Dr. Johnson</th>
+                    <td>Cardiologist</td>
+                    <td>202</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Dr. Brown</th>
+                    <td>Neurologist</td>
+                    <td>303</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Dr. Taylor</th>
+                    <td>Dermatologist</td>
+                    <td>404</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="3">All doctors are certified specialists</td>
+                </tr>
+            </tfoot>
+        </table>
+        <img src="clinic.jpg" alt="Medical room" title="Medical Room">
+    </section>
+</main>
+    <section id="gallery" class="gallery glass">
+    <h2 class="gallery-title">Our Gallery</h2>
+    <div class="gallery-grid">
+        <div class="card">
+            <img src="card1.jpg" alt="Doctor">
+            <p>Professional care</p>
+        </div>
+        <div class="card">
+            <img src="card2.jpg" alt="Doctor">
+            <p>Professional care</p>
+        </div>
+        <div class="card">
+            <img src="card3.jpg" alt="Doctor">
+            <p>Professional care</p>
+        </div>
+        <div class="card">
+            <img src="card4.jpg" alt="Doctor">
+            <p>Professional care</p>
+        </div>
+        <div class="card">
+            <img src="card1.jpg" alt="Doctor">
+            <p>Professional care</p>
+        </div>
+        <div class="card">
+            <img src="card2.jpg" alt="Doctor">
+            <p>Professional care</p>
+        </div>
+        <div class="card">
+            <img src="card3.jpg" alt="Doctor">
+            <p>Professional care</p>
+        </div>
+        <div class="card">
+            <img src="card4.jpg" alt="Doctor">
+            <p>Professional care</p>
+        </div>
+        <div class="card">
+            <img src="card1.jpg" alt="Doctor">
+            <p>Professional care</p>
+        </div>
+        <div class="card">
+            <img src="card2.jpg" alt="Doctor">
+            <p>Professional care</p>
+        </div>
+        <div class="card">
+            <img src="card3.jpg" alt="Doctor">
+            <p>Professional care</p>
+        </div>
+        <div class="card">
+            <img src="card4.jpg" alt="Doctor">
+            <p>Professional care</p>
+        </div>
+    </div>
+</section>
+<aside class="glass">
+    <h3>Working Hours</h3>
+    <p>Mon-Fri: 8:00 - 18:00</p>
+    <p>Sat: 9:00 - 14:00</p>
+
+    <h3>Contact</h3>
+    <p>+44 123 456 789</p>
+</aside>
+    <!-- SECTION 4 -->
+<section id="explore" class="glass explore-section">
+    <h2>Explore Our Center</h2>
+    <div class="explore-container">
+        <!-- картинки -->
+        <div class="explore-images" id="explore-images">
+            <div class="card">
+                <img src="card1.jpg" alt="Medical center">
+            </div>
+            <div class="card">
+                <img src="card2.jpg" alt="Medical center">
+            </div>
+        </div>
+        <!-- кнопка -->
+        <button id="load-more" class="nav-button">
+            Next
+        </button>
+    </div>
+</section>
+    <!-- SECTION 5 -->
+<section id="app" class="glass news-section">
+    <h2>Latest Health Updates</h2>
+    <!-- якщо новин немає -->
+    <p v-if="paginatedNews.length === 0">
+        No medical updates available.
+    </p>
+    <!-- список новин -->
+    <div class="news-grid">
+        <news-card
+            v-for="item in paginatedNews"
+            :key="item.id"
+            :news="item">
+        </news-card>
+    </div>
+    <!-- пагінація -->
+    <div class="pagination">
+        <button
+            class="nav-button"
+            @click="prevPage"
+            :class="{ disabled: currentPage === 1 }">
+            Prev
+        </button>
+        <span class="page-info">
+            Page {{ currentPage }} / {{ totalPages }}
+        </span>
+        <button
+            class="nav-button"
+            @click="nextPage"
+            :class="{ disabled: currentPage === totalPages }">
+            Next
+        </button>
+    </div>
+</section>
+
+<footer class="glass" id="contacts">
+    <p>&copy; 2026 HealthLB1 Medical Center</p>
+
+    <a href="https://www.who.int" target="_blank" rel="noopener noreferrer">
+        Visit WHO website
+    </a>
+</footer>
+</body>
+</html>
